@@ -44,30 +44,28 @@
 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 mb-3">Maneja todo tu negocio desde la aplicación.</h1>
-        <p class="col-lg-10 fs-4">⁣Tendrás a tu disposición gráficos y estadísticas.
-			La App de Smarket posee un software con #inteligenciaartificial pensado y diseñado para simplificar todos los procesos de control y gestión de datos, entregándote información relevante en tiempo real.
-			Es muy importante que te modernices, con esta tecnología estarás un paso adelante ya que podrás conocer a la perfección los productos que debes tener en tu inventario para el éxito de tu negocio.
-			Smarket Chile
-			Lo escaneas, lo ingresas, lo vendes
-			Así de Simple
-		</p>
+        <h1 class="display-4 fw-bold lh-1 mb-3">Maneja todo tu negocio desde una aplicación.</h1>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3 bg-light">
+        <form id="form_registro" class="p-4 p-md-5 border rounded-3 bg-light">
+          <h3 class="text-center">Prueba ya!</h3>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Nombre</label>
+            <input type="text" class="form-control" id="txtnombre" placeholder="Nombre">
+            <label for="txtnombre">Nombre</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Password">
-            <label for="floatingInput">Apellido</label>
+            <input type="text" class="form-control" id="txtapellido" placeholder="Apellido">
+            <label for="txtapellido">Apellido</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Password">
-            <label for="floatingInput">E-mail</label>
+            <input type="email" class="form-control" id="txtmail" placeholder="E-mail">
+            <label for="txtmail">E-mail</label>
           </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Prueba Smarket Ahora</button>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="txtfono" placeholder="Telefono">
+            <label for="txtfono">Telefono</label>
+          </div>
+          <botton id="btn_registro" type="botton" class="w-100 btn btn-lg btn-primary" onclick="validar(this)">Prueba Smarket Ahora</botton>
           <hr class="my-4">
         </form>
       </div>
@@ -310,6 +308,7 @@
   </footer>
 </div>
 
+<script src="js/script.js"></script>
 
     
   
